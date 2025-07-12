@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student-Teacher Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student-Teacher Booking Appointment</h1>
+
+    <div id="auth-section">
+      <h2>Login / Register</h2>
+      <form id="auth-form">
+        <label for="auth-email">Email:</label>
+        <input type="email" id="auth-email" required />
+
+        <label for="auth-password">Password:</label>
+        <input type="password" id="auth-password" required />
+
+        <button type="submit">Login / Register</button>
+      </form>
+    </div>
+
+    <form id="booking-form" style="display: none">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required />
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" required />
+
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <div id="appointments" style="display: none">
+      <h2>Booked Appointments</h2>
+      <ul id="appointment-list"></ul>
+    </div>
+
+    <div id="admin-panel" style="display: none">
+      <h2>Admin Dashboard</h2>
+      <ul id="admin-appointment-list"></ul>
+    </div>
+
+    <button id="logout-btn" style="display: none; margin-top: 20px">Logout</button>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
